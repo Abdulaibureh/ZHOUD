@@ -1,14 +1,17 @@
 .content{
-  background-color: #f00;
+  background-color: green;
   background-size: auto;
   color: #fff;
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
   width: auto;
 }
 .busy{
-  background-color: skyblue;
+  background-color: black;
+  color: #fff;
+  width: 400px;
 }
 .head{
   background-image: url(images/office.jpg);
@@ -36,11 +39,11 @@ ul.start{
   font-weight: bolder;
   text-decoration: none;
   padding: 20px;
-  margin-right: 10px;
+  margin-right: 35px;
 
 }
 .most{
-  background-color: bisque;
+  background-color: orange;
   font-family: Georgia, 'Times New Roman', Times, serif;
   
   padding: 25px;
@@ -49,23 +52,66 @@ ul.start{
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1fr;
+  align-items: center;
+  justify-content: center;
   
+}
+.less{
+  background-color: aquamarine;
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-iteration-count: 4;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+  animation-delay: 10s;
+}
+
+@keyframes slideLeft{
+  from{transform: translateX(200px);}
+}
+
+
+.vide{
+  width: 250px;
+  height: 150px;
+  margin-right: 35px;
+  border: 1px dashed blue;
+  border-radius: 40px;
+  background-color: #f00;
+}
+
+.papa{
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+
+
+}
+
+.pekin{
+  margin-right: 20px;
+
 }
 
 .less, .detals, img{
   display: inline-block;
   text-align: center;
+  
   color: #000;
-  border-radius: 70px;
+  border-radius: 10px;
   margin: auto;
-  width: 100px;
-  padding: 35px;
+  width: 150px;
+  padding: 5px;
 
 }
 
 
 .edite{
-  transform: translateX(100%);
+  transform: translateZ(100%);
   background-color: blue;
 }
 
@@ -75,5 +121,64 @@ ul.start{
 }
 
 .envid{
+  display: flex;
+  align-items: first baseline;
+  justify-content: right;
+  flex-direction: row;
+  border: 1px solid white;
+  margin-left: 450px;
+  border-radius: 5%;
+  height: 24px;
+}
+form{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  right: 150px;
+}
+
+.icon{
   
+  padding-top: 0%;
+  padding: 0 0;
+
+  outline:white;
+  width: 2em;
+  height: 0.99em;
+}
+img{
+  width: 100px;
+}
+input{
+  border: none;
+  outline: none;
+  padding-top: 0%;
+  width: 80%;
+  height: 1.8em;
+}
+.searchbtn{
+  border: none;
+  outline: none;
+  padding-top: 0%;
+  width: 40%;
+  height: 1.8em;
+}
+.joint a{
+  background-color: yellowgreen;
+}
+
+h3{
+  background-color: black;
+  color: red;
+}
+a:hover{
+  background-color: #f00;
+  color: #000;
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 650px;
+
 }
